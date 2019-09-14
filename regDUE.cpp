@@ -1,7 +1,9 @@
 /*
-  regDUE.h - Replacement by standard method for faster Arduino DUE operation
+  regDUE.h - Library giving replacement standard method for faster work work with Arduino DUE.
   Created by Daniil Kamishov, September 5, 2019.
   Released into the public domain.
+  
+  Updated by Daniil Kamishov, September 14, 2019.
 */
 
 #include <regDUE.h>
@@ -205,4 +207,6 @@ unsigned int regAnalogRead(byte pin)
 	unsigned int a = ADC->ADC_CDR[pin];
 	return a;
 }
+
+//DAC
 

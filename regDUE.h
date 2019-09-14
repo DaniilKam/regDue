@@ -1,9 +1,9 @@
 /*
-  regDUE.h - Replacement by standard method for faster Arduino DUE operation
+  regDUE.h - Library giving replacement standard method for faster work work with Arduino DUE.
   Created by Daniil Kamishov, September 5, 2019.
   Released into the public domain.
   
-  Updated by Daniil Kamishov, September 7, 2019.
+  Updated by Daniil Kamishov, September 14, 2019.
 */
 
 
@@ -67,18 +67,31 @@
 #define rD52 53
 #define rD53 46
 
-#define rA0 16
-#define rA1 24
-#define rA2 23
-#define rA3 22
-#define rA4 6
-#define rA5 4
-#define rA6 5
-#define rA7 2
-#define rA8 49
-#define rA9 50
-#define rA10 51
-#define rA11 52
+#define rDA0 16
+#define rDA1 24
+#define rDA2 23
+#define rDA3 22
+#define rDA4 6
+#define rDA5 4
+#define rDA6 5
+#define rDA7 2
+#define rDA8 49
+#define rDA9 50
+#define rDA10 51
+#define rDA11 52
+
+#define rA0 7
+#define rA1 6
+#define rA2 5
+#define rA3 4
+#define rA4 3
+#define rA5 2
+#define rA6 1
+#define rA7 0
+#define rA8 10
+#define rA9 11
+#define rA10 12
+#define rA11 13
 
 //PIO
 void regPinMode(byte pin, bool mode);
