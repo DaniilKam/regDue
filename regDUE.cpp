@@ -1,5 +1,5 @@
 /*
-  regDUE.h - Library for easy work with registers (PIO and ADC) on Arduino DUE.
+  regDUE.h - Replacement by standard method for faster Arduino DUE operation
   Created by Daniil Kamishov, September 5, 2019.
   Released into the public domain.
 */
