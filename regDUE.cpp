@@ -3,7 +3,7 @@
   Created by Daniil Kamishov, September 5, 2019.
   Released into the public domain.
   
-  Updated by Daniil Kamishov, September 14, 2019.
+  Updated by Daniil Kamishov, September 15, 2019.
 */
 
 #include <regDUE.h>
@@ -206,5 +206,20 @@ unsigned int regAnalogRead(byte pin)
 	while ((ADC->ADC_ISR & i) != i);
 	unsigned int a = ADC->ADC_CDR[pin];
 	return a;
+}
+
+//DAC
+void regAnalogWrite(unsigned int dac1, unsigned int dac2)
+{
+	#ifndef _REG_DAC_INIT
+	#define _REG_DAC_INIT
+	DACC->DACC_CR = 0;
+	DACC->DACC_MR |= 0x10;
+	DACC->DACC_CHER = 3;
+	#endif
+	unsigned long reg = dac2;
+	reg = reg << 16;
+	reg += dac1;
+	DACC->DACC_CDR = reg;
 }
 

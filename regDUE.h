@@ -3,7 +3,7 @@
   Created by Daniil Kamishov, September 5, 2019.
   Released into the public domain.
   
-  Updated by Daniil Kamishov, September 14, 2019.
+  Updated by Daniil Kamishov, September 15, 2019.
 */
 
 
@@ -93,6 +93,8 @@
 #define rA10 12
 #define rA11 13
 
+#define rAD52 14
+
 //PIO
 void regPinMode(byte pin, bool mode);
 void regDigitalWrite(byte pin, bool pos);
@@ -100,5 +102,8 @@ byte regDigitalRead(byte pin);
 
 //ADC
 unsigned int regAnalogRead(byte pin);
+
+//DAC
+void regAnalogWrite(unsigned int dac1, unsigned int dac2);
 
 #endif
