@@ -107,3 +107,4 @@ unsigned int regAnalogRead(byte pin);
 void regAnalogWrite(unsigned int dac1, unsigned int dac2);
 
 #endif
+
