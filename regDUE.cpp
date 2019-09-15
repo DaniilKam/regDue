@@ -208,5 +208,3 @@ unsigned int regAnalogRead(byte pin)
 	return a;
 }
 
-//DAC
-
