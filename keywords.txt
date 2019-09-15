@@ -4,7 +4,7 @@ regPinMode	KEYWORD2
 regDigitalWrite	KEYWORD2
 regDigitalRead	KEYWORD2
 regAnalogRead	KEYWORD2
-regAnalogWrite	KEYWORD2
+regAnalogWriteDAC	KEYWORD2
 
 rD0	LITERAL1
 rD1	LITERAL1

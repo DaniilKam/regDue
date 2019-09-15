@@ -104,7 +104,7 @@ byte regDigitalRead(byte pin);
 unsigned int regAnalogRead(byte pin);
 
 //DAC
-void regAnalogWrite(unsigned int dac1, unsigned int dac2);
+void regAnalogWriteDAC(unsigned int dac1, unsigned int dac2);
 
 #endif
 
